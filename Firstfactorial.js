@@ -1,7 +1,5 @@
-function FirstFactorial(num) { 
-var arr = []
-for(i = num; i >= 1; i--){
-arr.push(i)
+function firstFactorial(num){
+if(num === 0){return 1}
+  return num * firstFactorial(num-1)
 }
-  return arr.reduce(function(a,b){return a * b}); 
-}
+
